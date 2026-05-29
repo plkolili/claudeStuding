@@ -116,6 +116,7 @@ git push
 
 # 拉取远程更新
 git pull
+
 ```
 
 ---
@@ -125,7 +126,9 @@ git pull
 1. **创建 GitHub 仓库时保持空白**，否则会触发 `non-fast-forward` 错误
 2. **始终使用 SSH 地址**（`git@github.com:...`），不要用 HTTPS
 3. **首次推送**用 `git push -u origin main` 建立关联，之后直接用 `git push`
-
+4. 这只是一个一次性的设置提示，执行一次 git push -u origin main 或 git push --set-upstream origin main后就再也不会出现了。
+5. 查看本地分支：git branch，查看所有分支（包括远程）：git branch -a
+6. git branch -M main  # 重命名为 main
 ---
 
 按照以上步骤操作，即可在 WSL 中顺畅使用 GitHub SSH 连接。
